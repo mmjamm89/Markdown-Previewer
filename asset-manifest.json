@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Markdown-Previewer/static/css/main.31c2df55.chunk.css",
+    "main.js": "/Markdown-Previewer/static/js/main.0ea3ce8f.chunk.js",
+    "main.js.map": "/Markdown-Previewer/static/js/main.0ea3ce8f.chunk.js.map",
+    "runtime-main.js": "/Markdown-Previewer/static/js/runtime-main.bfaa14c9.js",
+    "runtime-main.js.map": "/Markdown-Previewer/static/js/runtime-main.bfaa14c9.js.map",
+    "static/js/2.8d9917e2.chunk.js": "/Markdown-Previewer/static/js/2.8d9917e2.chunk.js",
+    "static/js/2.8d9917e2.chunk.js.map": "/Markdown-Previewer/static/js/2.8d9917e2.chunk.js.map",
+    "index.html": "/Markdown-Previewer/index.html",
+    "static/css/main.31c2df55.chunk.css.map": "/Markdown-Previewer/static/css/main.31c2df55.chunk.css.map",
+    "static/js/2.8d9917e2.chunk.js.LICENSE.txt": "/Markdown-Previewer/static/js/2.8d9917e2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Markdown-Previewer/static/media/32.-Banana-Mania.5a3f14af.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfaa14c9.js",
+    "static/js/2.8d9917e2.chunk.js",
+    "static/css/main.31c2df55.chunk.css",
+    "static/js/main.0ea3ce8f.chunk.js"
+  ]
+}
