@@ -36,6 +36,7 @@
 }
 
 .App .textareas-container #editor {
+  cursor: auto;
   border: none;
   outline: none;
   resize: none;
