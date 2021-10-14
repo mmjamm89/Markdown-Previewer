@@ -1,38 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap");
 .App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  min-height: 600px;
+}
+
+.App #title {
+  font-family: "Source Code Pro", monospace;
   text-align: center;
+  color: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App #title .title {
+  margin: 15px 0 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App #title .text {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .textareas-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App .textareas-container #editor {
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 15px;
+  font-family: "Source Code Pro", monospace;
+  height: 75vh;
+  width: 27vw;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 30px;
+  padding: 20px;
+  background-color: rgba(250, 250, 250, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App .textareas-container #editor::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.App .textareas-container #editor::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 16px;
+}
+
+.App .textareas-container #editor::-webkit-scrollbar-thumb {
+  background-color: #b5b3b3;
+  border-radius: 20px;
+}
+
+.App .textareas-container #preview {
+  height: 75vh;
+  width: 27vw;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 30px;
+  padding: 20px;
+  font-size: 15px;
+  font-family: "Source Code Pro", monospace;
+  white-space: normal;
+  overflow: auto;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  word-break: break-word;
+  background-color: rgba(250, 250, 250, 0.6);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 16px;
+}
+
+.App .textareas-container #preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.App .textareas-container #preview::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+.App .textareas-container #preview::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 16px;
+}
+
+.App .textareas-container #preview::-webkit-scrollbar-thumb {
+  background-color: #b5b3b3;
+  border-radius: 20px;
+}
+
+@media (min-width: 250px) and (max-width: 810px) {
+  .App #title .title {
+    margin-top: 25px;
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .App #title .text {
+    font-size: 15px;
+  }
+  .App .textareas-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95vw;
+    min-width: 200px;
+  }
+  .App .textareas-container #editor {
+    height: 30vh;
+    width: 90%;
+    min-width: 150px;
+    min-height: 100px;
+    margin: 15px;
+    padding: 20px;
+  }
+  .App .textareas-container #preview {
+    height: 30vh;
+    width: 90%;
+    min-width: 150px;
+    min-height: 100px;
+    margin: 15px;
+    padding: 20px;
   }
 }
+/*# sourceMappingURL=app.css.map */
